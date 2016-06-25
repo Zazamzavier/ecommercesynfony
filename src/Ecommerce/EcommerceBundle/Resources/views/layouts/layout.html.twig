@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{ asset('bundles/ecommerce/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/ecommerce/css/styles.css') }}" />
+    <script type="text/javascript" src="{{ asset('bundles/ecommerce/js/bootstrap.min.js') }}" ></script>
+
+</head>
+<body>
+    <header>
+        Mon header
+    </header>
+    <section id="content">
+        <div class="row">
+            <div class="col-sm-3 sidebar-left" >
+                Ma sidebar
+            </div>
+            <div class="col-sm-9 page-content">
+                {% block pagecontent %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </section>
+    <footer>
+        Mon footer
+    </footer>
+</body>
+</html>

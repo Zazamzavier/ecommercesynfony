@@ -1,3 +1,6 @@
 ecommerce_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: EcommerceBundle:Default:index }
+    path:     /
+    defaults: { _controller: EcommerceBundle:Product:index }
+ecommerce_product_view:
+    path:     /product
+    defaults: { _controller: EcommerceBundle:Product:view }

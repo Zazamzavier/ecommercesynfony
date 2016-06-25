@@ -1,0 +1,23 @@
+{% extends "EcommerceBundle:layouts:layout.html.twig" %}
+
+{% block pagecontent %}
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                {% for i in 0..10 %}
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/holder.png') }}" alt="DevAndClick" width="300" height="300">
+                            <div class="caption">
+                                <h4>Thumbnail label</h4>
+                                <p>100,00 €</p>
+                                <a class="btn btn-primary" href="{{ path('ecommerce_product_view') }}">Plus d'infos</a>
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
