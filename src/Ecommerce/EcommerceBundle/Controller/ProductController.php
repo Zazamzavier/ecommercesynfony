@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ProductController extends Controller
 {
-    public function indexAction()
-    {
-        return $this->render('EcommerceBundle:Default:index.html.twig');
+    public function indexAction(){
+        //TODO give an array with only featured to home products to the template
+        return $this->render('EcommerceBundle:Product:products.html.twig');
     }
 }
