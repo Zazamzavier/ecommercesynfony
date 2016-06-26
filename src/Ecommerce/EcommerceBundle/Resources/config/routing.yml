@@ -2,5 +2,7 @@ ecommerce_homepage:
     path:     /
     defaults: { _controller: EcommerceBundle:Product:index }
 ecommerce_product_view:
-    path:     /product
+    path:     /product/{pid}
     defaults: { _controller: EcommerceBundle:Product:view }
+    requirements:
+            pid:  \d+

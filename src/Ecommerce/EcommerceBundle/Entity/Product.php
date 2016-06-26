@@ -49,6 +49,13 @@ class Product
      */
     private $disponiility;
 
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="homefeatured", type="boolean")
+     */
+    private $homefeatured;
+
 
     /**
      * Get id
@@ -145,10 +152,33 @@ class Product
     /**
      * Get disponiility
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getDisponiility()
     {
         return $this->disponiility;
+    }
+
+    /**
+     * Set homefeatured
+     *
+     * @param boolean $homefeatured
+     * @return Product
+     */
+    public function setHomefeatured($homefeatured)
+    {
+        $this->homefeatured = $homefeatured;
+
+        return $this;
+    }
+
+    /**
+     * Get homefeatured
+     *
+     * @return boolean
+     */
+    public function getHomefeatured()
+    {
+        return $this->homefeatured;
     }
 }

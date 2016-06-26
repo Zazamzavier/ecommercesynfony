@@ -1,0 +1,16 @@
+{% extends "EcommerceBundle:layouts:layout.html.twig" %}
+
+{% block pagecontent %}
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="thumbnail">
+                <img src="{{ asset('img/holder.png') }}" alt="DevAndClick" width="300" height="300">
+                <div class="caption">
+                    <h4>{{ product.name }}</h4>
+                    <p>{{ product.price|number_format(2, '.', ',') }} €</p>
+                    {{ dump(product) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
